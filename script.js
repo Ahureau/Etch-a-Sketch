@@ -35,9 +35,9 @@ createGrid();
 
 gridContainer.addEventListener("mouseover", (b) => {
     if (b.target && b.target.classList.contains("box")) {
-        b.target.classList.toggle("black");
+        b.target.style.background = getRandomColor();
     }
-})
+});
 
 // Add selection of grid size
 
